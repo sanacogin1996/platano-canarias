@@ -20,7 +20,7 @@ body {
     left: 0;
     right: 0;
     height: 73px;
-    background-color: var(--color-header);
+    background-color: #142856;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -214,4 +214,5 @@ body {
     text-align: right;
     margin-right: 50px;
     color: var(--color--test1);
+
 }
