@@ -1,0 +1,617 @@
+@font-face {
+    font-family: 'Gotham';
+    src: url('Gotham-Bold.woff2') format('woff2'),
+        url('Gotham-Bold.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+body{
+    font-family: "Gotham", sans-serif;
+    margin:0;
+}
+.contenedor-principal{
+    display: inline-flex;
+    width: 100%;
+    height: 760px;
+    background-image: image-set(
+        url("assets/images/banner-home_resultado.avif"),
+        url("assets/images/banner-home_resultado.webp") );
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img-izq-unicos{
+    position: relative;
+    margin-top: 90px;
+    right:140px;
+    transition-property: right;
+    transition-duration:0.5s;
+    &:hover{
+        right:10px;
+    }
+}
+.slide-der{
+    background-color: #00285692;
+    width: 60%;
+    height: 20%;
+    position: absolute;
+    right:0;
+    top:50%;
+}
+.encabezado,.abajo{
+    color:whitesmoke;
+    font-size: 30px;
+    font-weight: 500;
+    padding-left: 20px;
+}
+.boton-quiero,.secundario{
+    background-color: #FED000;
+    height: 40px;
+    width: 15%;
+    text-align: center;
+    padding-top: 9px;
+    font-weight:bold;
+    color:#002856;
+}
+.boton-quiero:hover{
+    background-color: #002856;
+    color:#FED000;
+}
+.link1,.link2{
+    text-decoration: none;
+}
+
+/* NUESTROS PLATANOS */
+.nuestros_platanos{
+    margin-top: 50px;
+    display: inline-flex;
+    width: 100%;
+    height: 760px;
+    background-image: image-set(
+        url("assets/images/mercado-plat_resultado.webp"),
+        url("assets/images/mercado-plat_resultado_1.avif") );
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.slider-platanos{
+    background-color: #00285692;
+    width: 60%;
+    height: 30%;
+    position: relative;
+    left:40%;
+    top:45%;
+}
+.enc-secundario{
+    color: white;
+    padding-left: 20px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+/* ULTIMAS NOTICIAS */
+
+.news{
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    height: 650px;
+    margin: 20px 0 60px 0;
+    align-items: center;
+}
+.news__enc{
+    display: block;
+    font-size: 40px;
+    color: #002856;
+}
+.news__cards{
+    display: inline-flex;
+}
+.card__prim,.card__sec,.card__ter{
+    margin: 15px;
+    background-color:#DFDFDF;
+    width: 300px;
+    height: 420px;
+}
+.boton-terciario{
+    background-color: #FED000;
+    height: 28px;
+    width:200px;
+    text-align: center;
+    padding-top: 15px;
+    font-weight:bold;
+    color:#002856;
+}
+.boton-terciario:hover{
+    background-color: #002856;
+    color:#FED000;
+}
+.link3{
+    margin-top: 40px;
+    text-decoration: none;
+}
+/* TARJETA 1 ULTIMAS NOTICIAS*/
+.card__imagen{
+    background-image: image-set(
+        url("assets/images/editada-polatano_resultado.webp"),
+        url("assets/images/editada-polatano_resultado.avif") );
+    background-size:cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 48%;
+    width: 100%;
+}
+.card__prim__texts{
+    margin:0 10px 0 10px;
+    position: relative;
+}
+.link4,.link5,.link6{
+    text-decoration: none;
+    justify-content: center;
+    position: absolute;
+    left: 30%;
+}
+.boton__card{
+    background-color: #FED000;
+    height: 25px;
+    width:120px;
+    padding-top: 7px;
+    text-align: center;
+    font-weight:bold;
+    color:#002856;
+    font-size:13px;
+    &:hover{
+    background-color: #002856;
+    color:#FED000;
+   }
+}
+
+.card__fecha{
+    font-size: 12px;
+    font-weight: 600;
+    color: #002856;
+}
+.text__link{
+    font-size: 13px;
+    font-weight: 700;
+    color: #002856;
+    text-transform: uppercase;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.small__text{
+    font-size: 11px;
+}
+
+/* TARJETA SECUNDARIA */
+
+.card__imagen__dos{
+    background-image: image-set(
+        url("assets/images/vicky_resultado.webp"),
+        url("assets/images/vicky.avif") );
+    background-size:cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 48%;
+    width: 100%;
+}
+.link5{
+    margin-top: 17px;
+}
+
+/* TARJETA TERCIARIA */
+.card__imagen__tres{
+    background-image: image-set(
+        url("assets/images/platanos-azul_resultado.webp"),
+        url("assets/images/platanos-azul_resultado.avif") );
+    background-size:cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 48%;
+    width: 100%;
+}
+.link6{
+    margin-top: 9px;
+}
+
+/* RECETAS */
+
+.recetas{
+    margin:20px 0 30px 0;
+    width: 100%;
+    height: 610px;
+    background-image: image-set(
+        url("assets/images/platanos_resultado.webp"),
+        url("assets/images/platanos_resultado.avif"));
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+.enc__recetas{ /* ENCABEZADO RECETAS*/
+    display:block;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+.cont__recetas{
+    display:flex;
+}
+
+.batido,.bocados,.brochetas,.brick{
+    width: 220px;
+    height: 350px;
+    background-color: white;
+    margin-right: 30px;
+}
+/* TARJETA BATIDO */
+.batido__imagen{
+    background-image: image-set(
+        url("assets/images/batido_resultado.webp"),
+        url("assets/images/batido_resultado.avif"));
+        width: 100%;
+        height: 55%;
+        background-size:contain;
+        background-repeat: no-repeat;
+}
+.texto__receta{
+    font-size: 13px;
+    width: 80%;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.enlace__receta{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    margin-top: 30px;
+}
+.boton__receta{
+    background-color: #FED000;
+    height: 25px;
+    width:120px;
+    padding-top: 7px;
+    text-align: center;
+    font-weight:bold;
+    color:#002856;
+    font-size:13px;
+    &:hover{
+    background-color: #002856;
+    color:#FED000;
+   }
+}
+
+/* TARJETA BOCADOS */
+.bocados__imagen{
+    background-image: image-set(
+        url("assets/images/bocados_resultado.webp"),
+        url("assets/images/bocados_resultado.avif"));
+        width: 100%;
+        height: 55%;
+        background-size:contain;
+        background-repeat: no-repeat;
+}
+.dos{
+    position: relative;
+    bottom:15px;
+}
+
+
+/* TARJETA BROCHETAS*/
+.brocheta__imagen{
+    background-image: image-set(
+        url("assets/images/brocheta_resultado.webp"),
+        url("assets/images/brocheta_resultado.avif"));
+        width: 100%;
+        height: 55%;
+        background-size:contain;
+        background-repeat: no-repeat;
+}
+/* TARJETA BRICK*/
+.brick__imagen{
+    background-image: image-set(
+        url("assets/images/brick_resultado.webp"),
+        url("assets/images/brick_resultado.avif"));
+        width: 100%;
+        height: 55%;
+        background-size:contain;
+        background-repeat: no-repeat;
+}
+/* BOTON FIN SECCION 2 */
+.boton__enlace__quiero{
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    margin-top:50px;
+    color: #002856;
+    background-color: #FED000;
+    width: 200px;
+    height: 45px;
+    &:hover{
+    background-color: #002856;
+    color:#FED000;
+   }
+}
+
+/*-------- PAGINA NUESTRO COMPROMISO ---------*/
+.sect__principal{
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    height: 550px;
+    background-image:image-set(
+        url("assets/images/compromiso/portada-compromiso_resultado.webp"),
+        url("assets/images/compromiso/portada-compromiso_resultado.avif"));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: -16px;
+    overflow:hidden;
+}
+.cont__izq{
+    background-image: image-set(
+        url("assets/images/compromiso/etiqueta-platano_resultado.webp"),
+        url("assets/images/compromiso/etiqueta-platano_resultado.avif"));
+    width: 14%;
+    height: 12%;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 20px;
+    right:140px;
+    transition-property: right;
+    transition-duration:0.5s;
+    &:hover{
+        right:10px;
+    }
+}
+.enc__compromiso{
+    display: flex;
+    position: relative;
+    left:40%;
+    top:28%;
+    font-size: 35px;
+    color:white;
+    background-color:#00285692;
+    width:58.45%;
+    height: 80px;
+    padding:40px 0 0 30px;
+}
+
+/* SECCION MENU*/
+.menu__compromiso{
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    height: 45px;
+    background-color: #002856;
+}
+.nuestro__compromiso{
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    margin-right: 5px;
+    &:hover{
+        color: #FED000;
+    }
+}
+.barra{
+    color: white;
+    font-size: 15px;
+
+}
+.nuestra__marca{
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 5px;
+    color: white;
+    &:hover{
+        color: #FED000;
+    }
+}
+/* SECCION */
+.sect__ordenada{
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+    padding:35px 250px 0 250px;
+    color:#002856;
+}
+.ordenada__enc{
+    font-size: 30px;
+}
+.ordenada__texto__small{
+    font-size:25px;
+}
+.ordenada__texto__big{
+    font-weight: 300;
+}
+/* SECCION NUMERO UNO */
+.sect__numerada{
+    margin-top: 50px;
+    justify-content: center;
+    text-align:center;
+    height: 180px;
+    width: 100%;
+    
+}
+.numerada__imagen{
+    background-image: image-set(
+        url("assets/images/compromiso/uno_resultado.webp"),
+        url("assets/images/compromiso/uno_resultado.avif"));
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50%;
+    width: 100%;
+}
+.numerada__mejor{
+    font-size: 30px;
+}
+.numerada__text__mejor{
+    font-weight: 300;
+}
+
+/* SECCION NUMERO 2 */
+.imagen-dos{
+    background-image: image-set(
+        url("assets/images/compromiso/dos_resultado.webp"),
+        url("assets/images/compromiso/dos_resultado.avif"));
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50%;
+    width: 100%;
+}
+.text-dos{
+    width: 80%;
+    padding-left: 100px;
+}
+/* IMAGEN AENOR */
+.imagen__aenor{
+    background-image: image-set(
+        url("assets/images/compromiso/aenor.webp"),
+        url("assets/images/compromiso/aenor.avif"));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height:300px;
+    width: 100%;
+    margin-top: 100px;
+}
+
+/* SECCION TRES */
+.imagen-tres{
+    background-image: image-set(
+        url("assets/images/compromiso/tres_resultado.webp"),
+        url("assets/images/compromiso/tres_resultado.avif"));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.text-tres{
+    width: 100%;
+}
+.imagen__bancos{
+    background-image: image-set(
+        url("assets/images/compromiso/banco_resultado.webp"),
+        url("assets/images/compromiso/banco_resultado.avif"));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height:130px;
+    width: 100%;
+    margin-top: 100px;
+
+}
+/* SECCION CUATRO */
+.imagen-cuatro{
+    background-image: image-set(
+        url("assets/images/compromiso/cuatro_resultado.webp"),
+        url("assets/images/compromiso/cuatro_resultado.avif"));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.text-cuatro{
+    width: 100%;
+    text-align: center;
+}
+.imagen__mano{
+    background-image: image-set(
+        url("assets/images/compromiso/mano_resultado.webp"),
+        url("assets/images/compromiso/mano_resultado.avif"));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height:80px;
+    width: 100%;
+    margin-top: 100px;
+}
+/* SECCION CINCO */ 
+.quinta{
+    margin-bottom: 80px;
+}    
+.imagen-cinco{
+    background-image: image-set(
+        url("assets/images/compromiso/cinco_resultado.webp"),
+        url("assets/images/compromiso/cinco_resultado.avif"));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.text-cinco{
+    width: 100%;
+}
+
+/* SECCION BANNER */
+.sect__banner{
+    width: 100%;
+    height: 500px;
+    display: inline-flex;
+    flex-direction: column;
+}
+.barra__superior{
+    background-color: #DCF0F1;
+    width: 100%;
+    height: 50px;
+}
+.barra__inferior{
+    background-color: #DCF0F1;
+    width: 100%;
+    height: 50px;
+}
+.cont__banner{
+    width: 100%;
+    height: 400px;
+    background-image: image-set(
+    url("assets/images/compromiso/banner-abajo_resultado.webp"),
+    url("assets/images/compromiso/banner-abajo_resultado.avif"));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* SLIDE DERECHA BANNER*/
+.slide__banner{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left:40%;
+    top:20%;
+    background-color:#00285692;
+    width:60%;
+    height: 60%;
+    color:white;
+}
+.enc__banner{
+    font-size: 30px;
+    width: 45%;
+    padding-left: 25px;
+}
+.text__banner{
+    padding-left: 25px;
+}
+.boton__banner{
+    text-decoration: none;
+    color:#002856;
+    background-color: #FED000;
+    width: 15%;
+    height: 15%;
+    text-align: center;
+    margin-left: 25px;
+    padding-bottom: 10px;
+    &:hover{
+        color:#FED000;
+        background-color: #002856;    
+    }
+}
+
